@@ -1,24 +1,50 @@
-import logo from './logo.svg';
 import './App.css';
+import {BrowserRouter as Router, Routes, Route,Link} from 'react-router-dom';
+import Home from './Pages/Home';
+import Login from './Pages/Login';
+import NoMatch from './Pages/NoMatch';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Navbar bg="dark" variant="dark">
+      <Container>
+        <Navbar.Brand href="#home">Scanex</Navbar.Brand>
+        <Nav className="me-auto">
+          <Nav.Link href="/">Home</Nav.Link>
+          <Nav.Link href="/login">Login</Nav.Link>
+        </Nav>
+        </Container>
+      </Navbar>
+      <Routes>
+        <Route path='/' element={<Home />}/>
+        <Route path='/login' element={<Login />}/>
+        <Route path='*' element={<NoMatch />}/>
+      </Routes>
+      <div className='footer-div'>
+        <div className="footer-element">
+          <div className='footer-title'>Location</div>
+          <p>1200,Main Square Parkavenue, Prishtina</p>
+        </div>
+        <div className="footer-element">
+          <div className='footer-title'>Around the Web</div>
+          <p>Find us on these social media platforms</p>
+          <a href="https://www.facebook.com"><img  width="25px" height='25px' src={require('./Pages/Images/Facebook-icon.png')} /></a>
+        </div>
+        <div className="footer-element">
+          <div className='footer-title'>About Us</div>
+          <p>Since 2018 we have been making apartaments more attractive and aproachable to the potential clients</p>
+        </div>
+        
+      </div>
+
+    </Router>
+    
   );
 }
 
