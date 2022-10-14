@@ -1,0 +1,14 @@
+.root-element{
+    display: grid;
+
+}
+.employee-cards{
+    margin: 30px;
+    
+}
+.video-element{
+    margin: auto;
+    width: 50%;
+    height: 400px;
+    padding: 10px;
+}

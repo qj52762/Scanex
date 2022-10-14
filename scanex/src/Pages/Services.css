@@ -1,0 +1,17 @@
+.crypto-img{
+    height: 600px;
+    /* opacity: 0.6; */
+}
+
+.info-text{
+    /* color: black; */
+    padding-bottom: 200px;
+    font-size: 25px;
+}
+
+.list_element{
+    font-size: 20px;
+    border: none;
+    color: white;
+    background: none;
+}

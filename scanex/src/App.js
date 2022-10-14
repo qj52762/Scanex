@@ -3,6 +3,9 @@ import {BrowserRouter as Router, Routes, Route,Link} from 'react-router-dom';
 import Home from './Pages/Home';
 import Login from './Pages/Login';
 import NoMatch from './Pages/NoMatch';
+import Services from './Pages/Services';
+import AboutUs from './Pages/AboutUs';
+import Biography from './Pages/Biography';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -18,12 +21,17 @@ function App() {
         <Nav className="me-auto">
           <Nav.Link href="/">Home</Nav.Link>
           <Nav.Link href="/login">Login</Nav.Link>
+          <Nav.Link href="/services">Services</Nav.Link>
+          <Nav.Link href="/aboutus">AboutUs</Nav.Link>
         </Nav>
         </Container>
       </Navbar>
       <Routes>
         <Route path='/' element={<Home />}/>
         <Route path='/login' element={<Login />}/>
+        <Route path='/services' element={<Services />}/>
+        <Route path='/aboutus' element={<AboutUs />}/>
+        <Route path='/biography' element={<Biography />}/>
         <Route path='*' element={<NoMatch />}/>
       </Routes>
       <div className='footer-div'>
