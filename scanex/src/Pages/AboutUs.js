@@ -1,4 +1,4 @@
-import Button from 'react-bootstrap/Button';
+
 import Card from 'react-bootstrap/Card';
 import React, {useState, useEffect} from 'react'
 import Row from  'react-bootstrap/Row';
@@ -35,7 +35,7 @@ const AboutUs = () => {
              Hello my name is {user.name.first +" " + user.name.last}, I was born on {user.dob.date.substring(0,4)}. I am {user.dob.age} years old.
              I work for Scanex. I live in {user.location.city + ', ' + user.location.state}. My phone number is {user.phone} and my email addres {user.email}.
           </Card.Text>
-          <Button href='/biography' variant="primary">Read More</Button>
+          
         </Card.Body>
       </Card>)}
     </Row>

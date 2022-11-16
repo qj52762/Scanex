@@ -1,5 +1,4 @@
 import React from 'react'
-import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Row from  'react-bootstrap/Row';
 import Carousel from 'react-bootstrap/Carousel';
@@ -12,33 +11,33 @@ function Home() {
 
         <Row className='row'> 
             <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src={require('./Images/Login-background.jpg')} />
+                <Card.Img variant="top" src={require('./Images/bitcoin.jpg')} />
                 <Card.Body>
-                    <Card.Title>Interior Matters</Card.Title>
+                    <Card.Title>Bitcoin</Card.Title>
                     <Card.Text>
-                        Every little inch of your space gives a different impression.
+                    Bitcoin is a decentralized digital currency that can be transferred on the peer-to-peer bitcoin network.
                     </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
+                
                 </Card.Body>
             </Card>
             <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src={require('./Images/Cameraman.jpg')} />
+                <Card.Img variant="top" src={require('./Images/dogecoin.jpg')} />
                 <Card.Body>
-                    <Card.Title>Cameraman</Card.Title>
+                    <Card.Title>Dogecoin</Card.Title>
                     <Card.Text>
-                          When you make a photo catch every possible detail.
+                    Dogecoin is the accidental crypto movement that makes people smile!
                     </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
+                    
                 </Card.Body>
             </Card>
             <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src={require('./Images/DeskItems.jpg')} />
+                <Card.Img variant="top" src={require('./Images/etherum.jpg')} />
                 <Card.Body>
-                    <Card.Title>Dedication</Card.Title>
+                    <Card.Title>Ethereum</Card.Title>
                     <Card.Text>
-                        Our team is dedicated to make your place look amazing!
+                    Ethereum is a technology that's home to digital money, global payments, and applications.
                     </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
+                    
                 </Card.Body>
             </Card>
 
@@ -47,38 +46,38 @@ function Home() {
  <Carousel.Item>
    <img width='1600px' height='800px'
      className="Project1"
-     src={require('./Images/Project1.jpg')}
+     src={require('./Images/Avalanche.png')}
      alt="First slide"
    />
    <Carousel.Caption>
-     <h3>Living room</h3>
-     <p>One of our many projects with a focus on the living room</p>
+     <h3>Avalanche</h3>
+     <p>Avalanche is the fastest smart contracts platform in the blockchain industry, as measured by time-to-finality. Avalanche is blazingly fast, low cost, and eco-friendly.</p>
    </Carousel.Caption>
  </Carousel.Item>
  <Carousel.Item>
  <img width='1600px' height='800px'
      className="Project2"
-     src={require('./Images/Project2.jpg')}
+     src={require('./Images/Cardano.png')}
      alt="Second slide"
    />
 
    <Carousel.Caption>
-     <h3>Stairway to Heaven</h3>
-     <p>The design of the stairway done by our team.
+     <h3>Cardano</h3>
+     <p>Cardano is a proof-of-stake blockchain platform: the first to be founded on peer-reviewed research and developed through evidence-based methods.
      </p>
    </Carousel.Caption>
  </Carousel.Item>
  <Carousel.Item>
  <img width='1600px' height='800px'
      className="Project3"
-     src={require('./Images/Project3.jpg')}
+     src={require('./Images/Eth-blockchain.jpg')}
      alt="Third slide"
    />
 
    <Carousel.Caption>
-     <h3>Open Spaces</h3>
+     <h3>Ethereum</h3>
      <p>
-       Most of our clients ask for additional focus on the open spaces.
+       Ethereum is a decentralized, open-source blockchain with smart contract functionality.
      </p>
    </Carousel.Caption>
  </Carousel.Item>

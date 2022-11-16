@@ -5,7 +5,6 @@ import Login from './Pages/Login';
 import NoMatch from './Pages/NoMatch';
 import Services from './Pages/Services';
 import AboutUs from './Pages/AboutUs';
-import Biography from './Pages/Biography';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -31,7 +30,6 @@ function App() {
         <Route path='/login' element={<Login />}/>
         <Route path='/services' element={<Services />}/>
         <Route path='/aboutus' element={<AboutUs />}/>
-        <Route path='/biography' element={<Biography />}/>
         <Route path='*' element={<NoMatch />}/>
       </Routes>
       <div className='footer-div'>
@@ -46,7 +44,7 @@ function App() {
         </div>
         <div className="footer-element">
           <div className='footer-title'>About Us</div>
-          <p>Since 2018 we have been making apartaments more attractive and aproachable to the potential clients</p>
+          <p>Since 2018 we have informed you about Crypto</p>
         </div>
         
       </div>
